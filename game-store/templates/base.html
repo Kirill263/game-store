@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин видеоигр</title>
+    <!-- Подключение стилей CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'responsive.css' %}">
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <h2><a href="#">Магазин видеоигр</a></h2>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="menu">
+                        <ul>
+                            <li class="active"><a href="/">Главная</a></li>
+                            <li><a href="/lifestyle/">Лайфстайл</a></li>
+                            <li><a href="/food/">Еда</a></li>
+                            <li><a href="/nature/">Природа</a></li>
+                            <li><a href="/photography/">Фотография</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bg">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li class="active"><a href="/">Главная</a></li>
+                                        <li><a href="/lifestyle/">Лайфстайл</a></li>
+                                        <li><a href="/food/">Еда</a></li>
+                                        <li><a href="/nature/">Природа</a></li>
+                                        <li><a href="/photography/">Фотография</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="footer-icon">
+                                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
+                                            class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i
+                                            class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i
+                                            class="fa fa-dribbble" aria-hidden="true"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>
