@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="display-4">Жанры</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    {% for genre in genres %}
+                        <li class="list-group-item">{{ genre.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
